@@ -2,9 +2,18 @@ Rails.application.routes.draw do
 
   root to: 'products#index'
 
-  resources :products, only: [:index, :show]
+  resources :products, only: [:index, :show] do
+    resources :reviews
+  end
+
   resources :categories, only: [:show]
-  
+
+ # resources :review  <--moved under products
+#example  
+  # resources :topics do
+  #   resources :conversations
+  # end
+
   # these routes are for showing users a login form, logging them in, and logging them out.
   get '/login' => 'sessions#new'
   post '/login' => 'sessions#create'

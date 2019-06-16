@@ -1,19 +1,18 @@
 <h1><%= @product.name %> Reviews</h1>
 
-<%= form_for :review, url: product_reviews_path(@product) do |f| %>
-  <h2>New Review</h2>
-   <% if current_user %>
-        <%= f.hidden_field :user_id, value: current_user.id%>
-    <% end %>
+<% if current_user %>
+ <%= form_for :review, url: product_reviews_path(@product) do |f| %>
+   <h2>New Review</h2>
+    <%= f.hidden_field :user_id, value: current_user.id%>
 
-  <%= f.label :description %><br>
-  <%= f.text_field :description %><br>
+   <%= f.label :description %><br>
+   <%= f.text_field :description %><br>
 
-  <%= f.label :rating %><br>
-  <%= f.text_field :rating %><br>
+   <%= f.label :rating %><br>
+   <%= f.text_field :rating %><br>
 
-  <%= f.submit("Create New Review") %><br>
-
+   <%= f.submit("Create New Review") %><br>
+  <% end %>
 <% end %>
 
 

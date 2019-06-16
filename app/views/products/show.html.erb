@@ -22,6 +22,9 @@
           <dd><%= @product.quantity %></dd>
           <dt>Price</dt>
           <dd><%= @product.price %></dd>
+          <dt>Reviews</dt>
+          <dd><%= @product.reviews.count %></dd>
+          <dd><%= link_to "Read Review", product_reviews_url(@product.id) %></dd>
         </dl>
       </div>
     </div>

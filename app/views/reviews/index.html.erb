@@ -1,9 +1,7 @@
-<h1>
-   Future home of Reviews
-</h1>
+<h1><%= @product.name %> Reviews</h1>
 
 <ul>
   <% @reviews.each do |review| %>
-    <li><%= review.description %></li>
+    <li><%= review.description %> Rating: <%= review.rating %></li>
   <% end %>
 </ul>

@@ -3,6 +3,7 @@
 <% if current_user %>
  <%= form_for :review, url: product_reviews_path(@product) do |f| %>
    <h2>New Review</h2>
+   <div>
     <%= f.hidden_field :user_id, value: current_user.id%>
 
    <%= f.label :description %><br>
@@ -10,8 +11,11 @@
 
    <%= f.label :rating %><br>
    <%= f.text_field :rating %><br>
-
-   <%= f.submit("Create New Review") %><br>
+   <br>
+   <%= f.submit("Add Review") %><br>
+   <br>
+   <h4> Existing reviews </h4>
+   </div>
   <% end %>
 <% end %>
 

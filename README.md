@@ -26,3 +26,12 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 * Rails 4.2 [Rails Guide](http://guides.rubyonrails.org/v4.2/)
 * PostgreSQL 9.x
 * Stripe
+
+## Screen Shots
+![Sold Out](/docs/soldout.png)
+
+![Product Page](/docs/productPage.png)
+
+![Reviews All](/docs/reviews_3.png)
+
+![Reviews Add](/docs/add_reviews_3.png)

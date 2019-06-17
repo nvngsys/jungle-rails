@@ -30,8 +30,8 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 ## Screen Shots
 ![Sold Out](/docs/soldout.png)
 
-![Product Page](/docs/productPage.png)
+![Product Page](/docs/product_page.png)
 
-![Reviews All](/docs/reviews_3.png)
+![Reviews All](/docs/reviews.png)
 
-![Reviews Add](/docs/add_reviews_3.png)
+![Reviews Add](/docs/add_review.png)

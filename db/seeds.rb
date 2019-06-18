@@ -132,5 +132,9 @@ cat3.products.create!({
   price: 2_483.75
 })
 
+Review.create(product_id: 6, user_id: 3, description: 'Love the feet', rating: 3)//run already
+Review.create(product_id: 6, user_id: 3, description: 'Nasty Feet', rating: 1)
+Review.create(product_id: 6, user_id: 3, description: 'Feeling Happy feet', rating: 5)
 
+User.create first_name: 'Tiger',last_name: 'Woods', email: 'tiger@woods.com', password: 'x', password_confirmation: 'x'
 puts "DONE!"

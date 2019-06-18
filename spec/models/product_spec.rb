@@ -32,7 +32,7 @@ RSpec.describe Product, type: :model do
       category = Category.create name: 'Golf4'
       product = Product.create name: 'New product', price: 4000, quantity: 10
       #product.errors.full_messages
-      expect(product).to be_valid
+      expect(product).to_not be_valid
     end
   end
 end
